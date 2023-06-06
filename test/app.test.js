@@ -4,7 +4,7 @@ const app = require("../index"); // Assuming your main app file is named "app.js
 
 // Optional: Set up a test database or use a separate database for testing
 beforeAll(async () => {
-  await mongoose.connect("mongodb://localhost:27017/productsDB", {
+  await mongoose.connect(process.env.url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
