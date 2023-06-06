@@ -85,7 +85,7 @@ let port = process.env.PORT || 3002;
 app.listen(port, async () => {
   await connectToDB();
   console.log(`Server Started in This Port  ${port}`);
-  console.log("DB connected");
+  console.log("DB connected And working");
 });
 
 module.exports = app;
